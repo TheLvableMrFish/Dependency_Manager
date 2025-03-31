@@ -8,6 +8,7 @@ window = tk.Tk()
 window.title('Dependency Manager')
 window.geometry('600x400')
 window.minsize(295,100)
+window.maxsize(1920, 1080)
 
 notebook = ttk.Notebook(window)
 tab1 = ttk.Frame(notebook)
