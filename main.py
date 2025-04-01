@@ -13,7 +13,7 @@ window.maxsize(1920, 1080)
 notebook = ttk.Notebook(window)
 tab1 = ttk.Frame(notebook)
 tab2 = ttk.Frame(notebook)
-tab3 = ttk.Frame(notebook)
+# tab3 = ttk.Frame(notebook)
 
 # Tab 1
 notebook.add(tab1, text = 'Generate Dependency')
@@ -51,14 +51,17 @@ name_label2.grid(row=0, column=0, padx=10, pady=5, sticky='w')
 name_entry2 = ttk.Entry(tab2)
 name_entry2.grid(row=0, column=1, padx=10, pady=5, sticky='w')
 
+get_dependency_btn = ttk.Button(tab2, text="Get")
+get_dependency_btn.grid(row=0, column=2, padx=10, pady=5, sticky='w')
+
 # Tab 3
-notebook.add(tab3, text = 'Group Dependencies')
+# notebook.add(tab3, text = 'Group Dependencies')
 
 # Name Entry
-name_label2 = ttk.Label(tab3, text="Name:")
-name_label2.grid(row=0, column=0, padx=10, pady=5, sticky='w')
-name_entry2 = ttk.Entry(tab3)
-name_entry2.grid(row=0, column=1, padx=10, pady=5, sticky='w')
+# name_label2 = ttk.Label(tab3, text="Name:")
+# name_label2.grid(row=0, column=0, padx=10, pady=5, sticky='w')
+# name_entry2 = ttk.Entry(tab3)
+# name_entry2.grid(row=0, column=1, padx=10, pady=5, sticky='w')
 
 notebook.pack(fill='both')
 
